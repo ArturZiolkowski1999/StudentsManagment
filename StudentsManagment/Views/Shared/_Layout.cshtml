@@ -1,14 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+<head style="color: white;">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - StudentsManagment</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/StudentsManagment.styles.css" asp-append-version="true" />
+    
 </head>
-<body>
+<body style="background-image: url('https://media.istockphoto.com/id/547016978/photo/old-school-chalkboard.jpg?b=1&s=170667a&w=0&k=20&c=IIbX6Fz-tWv7kSf5T6HZueGJtDJZhw5VsmOie8YuZq4=');
+             background-size: cover;
+             color: white;">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -25,19 +28,29 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="Index">Students</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="ShowSearchForm">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="ShowSearchEstimatedAge">Estimate Age</a>
+                        </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" style="color: white;">
+        
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style="color: white;">
         <div class="container">
             &copy; 2023 - StudentsManagment - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
